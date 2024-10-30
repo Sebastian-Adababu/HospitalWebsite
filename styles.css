@@ -1,0 +1,1206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.doctor-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.doctor-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    color: #666;
+}
+/* Add media queries for different screen sizes */
+@media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    header {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust the layout for even smaller screens */
+    header {
+        padding: 5px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-bottom: 5px;
+    }
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section styles */
+section {
+    padding: 60px 0;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 15px;
+}
+
+/* Link styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-link {
+    color: #34495e;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+    color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
+
+
+/* Add styles for the menu icon */
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer; /* Change the cursor to a pointer */
+}
+
+/* Show the menu icon on smaller screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+        position: absolute; /* Position the menu icon absolutely */
+        top: 20px; /* Position the menu icon 20px from the top */
+        right: 20px; /* Position the menu icon 20px from the right */
+        font-size: 24px; /* Increase the font size of the menu icon */
+        color: #333; /* Change the color of the menu icon */
+    }
+}
+
+/* Add styles for the navigation menu on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation menu by default */
+    }
+    nav ul.active {
+        display: block; /* Show the navigation menu when the menu icon is clicked */
+    }
+}
+.hero {
+    background-color: #f5f5f5; /* Add a light gray background color */
+    padding: 100px 0; /* Add some padding to the hero section */
+}
+
+.hero h1 {
+    font-size: 36px; /* Increase the font size of the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.hero p {
+    font-size: 18px; /* Increase the font size of the paragraph */
+    margin-bottom: 20px; /* Add some margin bottom to the paragraph */
+}
+
+.hero button {
+    background-color: #337ab7; /* Change the background color of the button */
+    color: #ffffff; /* Change the text color of the button */
+    padding: 10px 20px; /* Add some padding to the button */
+    border-radius: 5px; /* Add a border radius to the button */
+}
+
+.hero img {
+    width: 100%; /* Make the image full width */
+    height: 300px; /* Set the height of the image */
+    object-fit: cover; /* Make the image cover the entire container */
+    border-radius: 10px; /* Add a border radius to the image */
+}
+.hero ul {
+    list-style: none; /* Remove the default list style */
+    padding: 0; /* Remove the default padding */
+    margin: 20px 0; /* Add some margin top and bottom */
+}
+
+.hero li {
+    margin-bottom: 10px; /* Add some margin bottom to each list item */
+}
+
+.hero li i {
+    color: #337ab7; /* Change the color of the Font Awesome icons */
+    margin-right: 10px; /* Add some margin right to the icons */
+}
+.services {
+    background-color: #f5f5f5; /* Add a light gray background color */
+    padding: 100px 0; /* Add some padding to the services section */
+}
+
+.service-box {
+    background-color: #ffffff; /* Add a white background color */
+    padding: 20px; /* Add some padding to the service box */
+    border: 1px solid #ddd; /* Add a border to the service box */
+    border-radius: 10px; /* Add a border radius to the service box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Add a box shadow to the service box */
+}
+
+.service-box i {
+    font-size: 36px; /* Increase the font size of the Font Awesome icons */
+    margin-bottom: 10px; /* Add some margin bottom to the icons */
+}
+
+.service-box h3 {
+    font-size: 24px; /* Increase the font size of the service box headings */
+    margin-bottom: 10px; /* Add some margin bottom to the headings */
+}
+
+.service-box p {
+    font-size: 18px; /* Increase the font size of the service box paragraphs */
+    margin-bottom: 20px; /* Add some margin bottom to the paragraphs */
+}
+.service-box ul {
+    list-style: none; /* Remove the default list style */
+    padding: 0; /* Remove the default padding */
+    margin: 20px 0; /* Add some margin top and bottom */
+}
+
+.service-box li {
+    margin-bottom: 10px; /* Add some margin bottom to each list item */
+}
+
+.service-box li::before {
+    content: "\f058"; /* Add a Font Awesome icon to each list item */
+    font-family: "Font Awesome 5 Free"; /* Specify the font family for the icon */
+    margin-right: 10px; /* Add some margin right to the icon */
+}
+.about {
+    background-color: #f9f9f9; /* Add a light gray background color */
+    padding: 100px 0; /* Add some padding to the about section */
+}
+
+.about h2 {
+    font-size: 36px; /* Increase the font size of the heading */
+    margin-bottom: 20px; /* Add some margin bottom to the heading */
+}
+
+.about h3 {
+    font-size: 24px; /* Increase the font size of the subheadings */
+    margin-bottom: 10px; /* Add some margin bottom to the subheadings */
+}
+
+.about ul {
+    list-style: none; /* Remove the default list style */
+    padding: 0; /* Remove the default padding */
+    margin: 20px 0; /* Add some margin top and bottom */
+}
+
+.about li {
+    margin-bottom: 10px; /* Add some margin bottom to each list item */
+}
+
+.about li::before {
+    content: "\f058"; /* Add a Font Awesome icon to each list item */
+    font-family: "Font Awesome 5 Free"; /* Specify the font family for the icon */
+    margin-right: 10px; /* Add some margin right to the icon */
+}
+
+.about a {
+    text-decoration: none; /* Remove the default text decoration */
+    color: #337ab7; /* Add a blue color to the links */
+}
+
+.about a:hover {
+    color: #23527c; /* Add a darker blue color to the links on hover */
+}
+
+   
+   /* Meet the Doctor Section Styles */
+.meet-the-doctor {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.meet-the-doctor h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.meet-the-doctor p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+#doctorCarousel {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#doctorCarousel .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+#doctorCarousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#doctorCarousel .carousel-caption h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#doctorCarousel .carousel-caption p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#doctorCarousel .carousel-control-prev,
+#doctorCarousel .carousel-control-next {
+    width: 5%;
+}
+
+#doctorCarousel .carousel-indicators {
+    bottom: -50px;
+}
+
+#doctorCarousel .carousel-indicators li {
+    background-color: #999;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#doctorCarousel .carousel-indicators .active {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    #doctorCarousel .carousel-item img {
+        height: 300px;
+    }
+
+    #doctorCarousel .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+    #doctorCarousel .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+
+
+  /* Contact Section Styles */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-section .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contact-section .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #23527c;
+    border-color: #23527c;
+}
+
+.contact-section h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-section .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact-section .social-media a {
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+.contact-section .social-media a:hover {
+    color: #23527c;
+}
+/* Footer Section Styles */
+
+.footer-section {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+    color: #23527c;
+}
+
+.footer-section .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-section .social-media a {
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+.footer-section .social-media a:hover {
+    color: #23527c;
+}
+
+.footer-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-section .form-group {
+    margin-bottom: 15px;
+}
+
+.footer-section .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.footer-section .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer-section .btn-primary:hover {
+    background-color: #23527c;
+    border-color: #23527c;
+}
+
+.footer-section .payment-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .payment-options li {
+    display: inline-block;
+    margin-right: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.lightbox {
+    text-decoration: none;
+    color: #333;
+}
+
+.lightbox:hover {
+    color: #337ab7;
+}
+/* Gallery Section Styles */
+.gallery-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.gallery-caption h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.gallery-caption p {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Lightbox Customization */
+.lb-data .lb-caption {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+.lb-data .lb-number {
+    font-size: 14px;
+}
+
+
+/* Contact Form Styles */
+.contact-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  /* Message Log Styles */
+  .message-log {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .message-log h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .message-log ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .message-log li {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .message-log li:last-child {
+    border-bottom: none;
+  }
+  
+  .message-log .message-data {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .message-log .message-data span {
+    font-weight: bold;
+  }
+
+
+
+  .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Specific colors for different social media platforms */
+.social-media a[href*="facebook.com"] { background-color: #4267b2; }
+.social-media a[href*="x.com"] { background-color: #1da1f2; }
+.social-media a[href*="instagram.com"] { background-color: #3897f0 }
+.social-media a[href*="linkedin.com"] { background-color: #002e5b; }
+.social-media a[href*="youtube.com"] { background-color: #ff0000; }
+
+.social-media a[href*="facebook.com"]:hover { background-color: #fff; }
+.social-media a[href*="x.com"]:hover { background-color: #1a91da; }
+.social-media a[href*="instagram.com"]:hover { background-color:#b50000}
+
+/*learn more*
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+.testimonial{
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+.testimonial video{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.testimonial img{
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial blockquote{
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+}
+@media(max-width:768px){
+    .testimonials{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:480px){
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+}
+
+.awards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+.award{
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+.award img{
+    width: 150px;
+    height: 100px;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+@media(max-width:768px){
+    .awards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:480px){
+    .awads{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*animated text*/
+
+
+.animated-text {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+}
+
+.animated-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #007bff;
+    border-right: 2px solid #007bff;
+    overflow: hidden;
+    animation: typing 6s steps(30) infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+@keyframes typing {
+    0%, 90%, 100% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .animated-text {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .animated-text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+/* Alternative Neon Effect */
+.animated-text {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px #007bff,
+                 0 0 10px #007bff,
+                 0 0 15px #007bff,
+                 0 0 20px #007bff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #007bff,
+                     0 0 20px #007bff,
+                     0 0 25px #007bff;
+    }
+    to {
+        text-shadow: 0 0 2.5px #fff,
+                     0 0 5px #fff,
+                     0 0 7.5px #007bff,
+                     0 0 10px #007bff,
+                     0 0 12.5px #007bff;
+    }
+}
+
+
+
+/* General Responsive Styles */
+@media screen and (max-width: 768px) {
+    h2 {
+        margin-left: 20px !important;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial video,
+    .testimonial img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Awards Section */
+    .awards {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .award {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .award img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Animated Text */
+    .animated-text {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Go Back Button */
+    .go-back-button {
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* Additional styles for even smaller screens */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .testimonial blockquote {
+        font-size: 14px;
+    }
+
+    .testimonial p {
+        font-size: 12px;
+    }
+
+    .award li {
+        font-size: 14px;
+    }
+}
+
+/* Base styles for testimonials and awards sections */
+.testimonials, .awards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.testimonial, .award {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* Make images and videos responsive by default */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add smooth transitions */
+.testimonial, .award {
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover, .award:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.go-back-button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.go-back-button:hover{
+    background-color: #666;
+}
+
+/* Animated Cards */
+.animated-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Counter Section */
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.counter {
+    text-align: center;
+    margin: 20px;
+}
+
+.counter i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.counter .num {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+}
+
+.counter .text {
+    color: #666;
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+    text-align: center;
+    padding: 40px;
+}
+
+.gradient-text h2 {
+    font-size: 48px;
+    background: linear-gradient(45deg, #007bff, #00ff88, #007bff);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate;
+    }
+}
